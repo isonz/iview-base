@@ -1,4 +1,8 @@
 # iview-base
+# vue-i18n版本只支持到5.0.3
+npm install --save vue-i18n@5.0.3 
+
+
 
 ## Project setup
 ```

@@ -1,9 +1,13 @@
 /**
+ * USE: http://localhost:8080/#/?locale=zh-CN
+ *
  * 引入vue-i18n
  */
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 Vue.use(VueI18n);
+import Func from '../libs/func'
+import Cookies from 'js-cookie'
 
 /**
  * 导入iview自带语言包
@@ -26,17 +30,22 @@ import app_en from './en-US.json';
 Vue.locale('zh-CN',Object.assign(zh, app_zh));
 Vue.locale('en-US',Object.assign(en, app_en));
 
-// 自动设置语言
+
 //获取本机系统语言
 const navLang = navigator.language;
 const localLang = (navLang === 'zh-CN' || navLang === 'en-US') ? navLang : false;
 
-/**
- * localStorage.getItem(key):获取指定key本地存储的值
- * localStorage.setItem(key,value)：将value存储到key字段
- * localStorage.removeItem(key):删除指定key本地存储的值
- */
-const lang = window.localStorage.getItem('language') || localLang || 'zh-CN';
+function _lang(lang){
+    if( 'undefined' === typeof lang ) return false;
+    if( ['en-US', 'zh-CN'].includes(lang) ) return lang;
+    return false;
+
+}
+
+const lang = _lang(Func.getUrlParam('locale')) || _lang(Cookies.get('locale')) || window.localStorage.getItem('language') || localLang || 'zh-CN';
+
+Cookies.set('locale', lang);
+
 
 
 //配置默认语言

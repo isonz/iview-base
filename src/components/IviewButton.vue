@@ -2,7 +2,7 @@
   <div class="blog-box">
     <Button>我的 IVIEW BUTTON {{ $t('open') }} {{ $t('close') }}</Button>
 
-    <i-switch v-model="data.switchShow" size="large" :value="true" true-value="1" false-value="0">
+    <i-switch v-model="data.switchShow" size="large">
       <span slot="open">{{ $t('open') }}</span>
       <span slot="close">{{ $t('close') }}</span>
     </i-switch>

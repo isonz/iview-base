@@ -40,9 +40,9 @@ const lang = window.localStorage.getItem('language') || localLang || 'zh-CN';
 
 
 //配置默认语言
-Vue.config.lang = 'zh-CN'; //默认为中文
+//Vue.config.lang = 'zh-CN'; //默认为中文
 //Vue.config.lang = 'en-US'; //默认为英文
-//Vue.config.lang = lang;   //自动
+Vue.config.lang = lang;   //自动
 
 export default{
 

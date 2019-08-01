@@ -4,6 +4,8 @@
   "open" : "开启",
   "close" : "禁用",
   "refresh" : "刷新",
+  "en_us" : "En",
+  "zh_cn" : "中文",
   "array": [
     1,2,3,4
   ]

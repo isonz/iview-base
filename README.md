@@ -45,3 +45,18 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+```
+npm install webpack webpack-cli --save-dev
+
+npm install --save lodash
+
+npm install iview --save
+
+npm install babel-plugin-import --save-dev
+
+webpack-dev-server --hot --inline
+
+```

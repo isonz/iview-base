@@ -6,6 +6,9 @@
   "refresh" : "刷新",
   "en_us" : "En",
   "zh_cn" : "中文",
+  "This is an about page" : "这是关于页面",
+  "nin hao": "您好",
+  "mine": "我的",
   "array": [
     1,2,3,4
   ]

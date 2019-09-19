@@ -1,6 +1,6 @@
 <template>
   <div class="blog-box">
-    <Button>我的 IVIEW BUTTON {{ $t('open') }} {{ $t('close') }}</Button>
+    <Button>{{ $t('mine') }} IVIEW BUTTON {{ $t('open') }} {{ $t('close') }}</Button>
 
     <i-switch v-model="data.switchShow" size="large">
       <span slot="open">{{ $t('open') }}</span>

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    {{ data.message }}
+    {{ $t(data.message) }}
     <IviewButtonHome></IviewButtonHome>
     <iview-button-home></iview-button-home>
   </div>
@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       data: {
-        message: '你好',
+        message: 'nin hao',
       }
     }
   }
